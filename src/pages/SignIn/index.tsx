@@ -76,7 +76,7 @@ const SignIn: React.FC = () => {
                     <a href="forgot">Esqueci minha senha</a>
                 </Form>
 
-                <a href="login">
+                <a href="signup">
                     <FiLogIn />
                     Criar conta
                 </a>
