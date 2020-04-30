@@ -18,23 +18,23 @@ const ToastContainer: React.FC<ToastContainerProps> = ({ messages }) => {
                 key={message.id}
                 type={message.type}
                 hasDescription={!!message.description}
-            >
-                <FiAlertCircle size={20}/>
+                >
+                    <FiAlertCircle size={20}/>
 
-                <div>
-                    <strong>
-                        {message.title}
-                    </strong>
-                    {message.description && <p>
-                        {message.description}
-                    </p>
-                    }
+                    <div>
+                        <strong>
+                            {message.title}
+                        </strong>
+                        {message.description && <p>
+                            {message.description}
+                        </p>
+                        }
 
-                    <button onClick={() => removeToast(message.id)} type='button'>
-                        <FiXCircle size={18} />
-                    </button>
-                </div>
-            </Toast>
+                        <button onClick={() => removeToast(message.id)} type='button'>
+                            <FiXCircle size={18} />
+                        </button>
+                    </div>
+                </Toast>
             ))}
         </Container>
     );
